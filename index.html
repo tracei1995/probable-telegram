@@ -103,7 +103,8 @@
   <section id="contact" class="section">
     <h3>Contact Us</h3>
     <div class="contact card contact-panel" aria-live="polite">
-      <form id="leadForm" action="https://formspree.io/f/yourformid" method="POST" novalidate>
+      <form id="leadForm" name="lead" method="POST" action="/" data-netlify="true" netlify>
+        <input type="hidden" name="form-name" value="lead">
         <label class="sr-only" for="name">Your Name</label>
         <input id="name" name="name" type="text" placeholder="Your Name" required>
 
@@ -134,7 +135,8 @@
   <div class="modal-content" role="document">
     <button id="closeModal" class="modal-close" aria-label="Close">×</button>
     <h4>Book your free consultation</h4>
-    <form id="modalForm" class="modal-form" action="https://formspree.io/f/yourformid" method="POST" novalidate>
+    <form id="modalForm" name="modal-lead" class="modal-form" method="POST" action="/" data-netlify="true" netlify>
+      <input type="hidden" name="form-name" value="modal-lead">
       <input name="name" placeholder="Your name" required />
       <input name="email" type="email" placeholder="Email" required />
       <input name="phone" placeholder="Phone (WhatsApp)" />
