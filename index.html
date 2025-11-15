@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Business Growth Accelerator — Trinidad & Tobago | Grow smarter</title>
+  <meta name="description" content="Business Growth Accelerator — Grow your Trinidad & Tobago business with digital tools: websites, WhatsApp automations, social media & conversion-focused campaigns." />
+  <meta name="theme-color" content="#0b2239" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Business Growth Accelerator — Trinidad & Tobago" />
+  <meta property="og:description" content="Grow your business with modern digital tools: websites, WhatsApp automations, social media & conversion-first strategies." />
+  <meta property="og:image" content="https://example.com/og-image.png" />
+  <meta property="og:url" content="https://your-site.example.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured data (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Business Growth Accelerator",
+    "image": ["https://example.com/og-image.png"],
+    "@id": "https://your-site.example.com",
+    "url": "https://your-site.example.com",
+    "telephone": "+1-868-000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Trinidad",
+      "addressRegion": "Trinidad and Tobago",
+      "postalCode": "",
+      "streetAddress": ""
+    },
+    "priceRange": "$$",
+    "description": "Helping Trinidad & Tobago businesses attract customers and increase revenue using websites, WhatsApp automations, social media and operational tooling."
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">BGA</div>
+      <div>
+        <h1 class="site-title">Business Growth Accelerator</h1>
+        <p class="site-sub">Helping Trinidad & Tobago Businesses Grow Smarter</p>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#contact">Contact</a>
+      <a class="cta small" id="whatsappBtn" href="#" aria-label="Contact on WhatsApp">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h2 class="hero-title">Grow Your Business With Modern Digital Tools</h2>
+      <p class="hero-sub">We help companies in Trinidad & Tobago attract more customers, boost sales, and modernize their operations using expert digital solutions.</p>
+      <div class="hero-actions">
+        <a class="btn primary" id="openLeadModal" href="#contact">Book a Free Consultation</a>
+        <a class="btn outline" id="learnMore" href="#services">See Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h3>Our Services</h3>
+    <div class="grid services">
+      <article class="card" tabindex="0" aria-labelledby="s1-title">
+        <h4 id="s1-title">Social Media Management</h4>
+        <p>Content creation, scheduling and growth strategies built for your brand and audience.</p>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="s2-title">
+        <h4 id="s2-title">Business Website Setup</h4>
+        <p>Responsive, high-converting websites to attract new customers and simplify operations.</p>
+      </article>
+
+      <article class="card" tabindex="0" aria-labelledby="s3-title">
+        <h4 id="s3-title">Customer Engagement Systems</h4>
+        <p>WhatsApp automations, booking flows, and digital loyalty programs that keep customers coming back.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="benefits" class="section light">
+    <h3>Why Choose Us?</h3>
+    <div class="grid benefits">
+      <div class="card small"><h4>Increase Customer Reach</h4><p>Be seen by the right customers online.</p></div>
+      <div class="card small"><h4>Boost Efficiency</h4><p>Automations that reduce manual work.</p></div>
+      <div class="card small"><h4>Affordable Packages</h4><p>Plans for local small businesses with measurable ROI.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contact Us</h3>
+    <div class="contact card contact-panel" aria-live="polite">
+      <form id="leadForm" action="https://formspree.io/f/yourformid" method="POST" novalidate>
+        <label class="sr-only" for="name">Your Name</label>
+        <input id="name" name="name" type="text" placeholder="Your Name" required>
+
+        <label class="sr-only" for="email">Your Email</label>
+        <input id="email" name="email" type="email" placeholder="Your Email" required>
+
+        <label class="sr-only" for="business">Business Name</label>
+        <input id="business" name="business" type="text" placeholder="Business Name (optional)">
+
+        <label class="sr-only" for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+
+        <button type="submit" class="btn primary full">Send Message</button>
+        <div id="formStatus" role="status" aria-live="polite" class="form-status"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>©2025 Business Growth Accelerator — Trinidad & Tobago</p>
+  </div>
+</footer>
+
+<!-- Modal (hidden) — used by CTA -->
+<div id="leadModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-content" role="document">
+    <button id="closeModal" class="modal-close" aria-label="Close">×</button>
+    <h4>Book your free consultation</h4>
+    <form id="modalForm" class="modal-form" action="https://formspree.io/f/yourformid" method="POST" novalidate>
+      <input name="name" placeholder="Your name" required />
+      <input name="email" type="email" placeholder="Email" required />
+      <input name="phone" placeholder="Phone (WhatsApp)" />
+      <button class="btn primary full" type="submit">Request a call</button>
+      <div id="modalStatus" class="form-status" aria-live="polite"></div>
+    </form>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
